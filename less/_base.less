@@ -1,0 +1,114 @@
+@import "_mixins.less";
+@import "_grid.less";
+@import "_normalize.less";
+
+//Variables
+@unit-height		:1rem;		// Unit Height
+@background-color 	:lighten(#f5efd3,0%);
+
+//Overall
+body{
+	.clearfix;
+	font-family: alegreya;
+}
+
+section#content {
+	//background-image: url("../resources/images/bg/beigePattern.png");
+	background-repeat: repeat;
+	padding-top: 1rem;
+}
+
+section#title {
+	background-image: url("../resources/images/bg/blackPattern.png");
+	background-repeat: repeat;
+	padding: 1rem;
+}
+
+//Logo
+#main-logo{
+	top: 0.1rem;
+	left: 0.1rem;
+	font-family: 'alex-brush';
+	height: 3rem;
+	width: 3rem;
+	border-radius: 100%;
+	background-color: #000;
+	font-size: 1.5rem;
+	color: #fff;
+
+	#T-container{
+		padding: 0.6rem;
+		padding-left: 0.1rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+//Title
+#title-wrapper {	
+	color: #fff;
+	.center;
+	text-align: center;
+
+	h1 {
+		font-family: 'alex-brush';
+		font-size: 4rem;
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+}
+
+
+//Navigation
+#main-nav-trigger{
+	position: fixed;
+	right: 0.5rem;
+	top: 0.5rem;
+	//padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav{
+	display: none;
+}
+
+
+//Post excerpts
+.excerpt-container {
+	margin: 2rem 2rem;
+	padding: 1rem;
+	font-size: 1.2rem;
+	.clearfix;
+	//background-color: fade(#fff,90%);
+	//background-color: fade(@background-color,60%);
+	//border-radius: 5px;
+
+	.excerpt-title {
+		.clearfix;
+	}
+
+	img.homepage-post-thumbnail {
+		border-radius: 100%;
+		padding: 0.5rem;
+		float: right;
+		height: 8rem;
+		width: 8rem;
+		//margin-right: 2rem;
+	}
+}
+
+//Footer
+#footer {
+	clear: both;
+	.center;
+}
