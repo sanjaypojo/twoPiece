@@ -1,5 +1,5 @@
-	<div id="footer">
+	<section id="footer">
 		Developed by <a href="https://twitter.com/sanjaypojo">@sanjaypojo</a>
-	</div>
+	</section>
 	</section>
 </body>
