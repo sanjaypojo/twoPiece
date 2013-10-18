@@ -4,13 +4,13 @@
 
 <!DOCTYPE html>
 <!--[if IE 7]>
-<html class="ie ie7" <?php language_attributes(); ?>>
+<html class="ie ie7">
 <![endif]-->
 <!--[if IE 8]>
-<html class="ie ie8" <?php language_attributes(); ?>>
+<html class="ie ie8">
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html>
 <!--<![endif]-->
 
 <head>
@@ -37,7 +37,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	<i class="icon-reorder icon-2x" id="main-nav-trigger"></i>
 	<?php
 	//Including navigation

@@ -6,7 +6,7 @@
 				<div id="T-container">T</div>
 			</a>
 		</div>
-		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+		<a href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 		<h3><?php bloginfo('description'); ?> </h3>
 	</section>
 
@@ -36,5 +36,6 @@
 		<?php else: ?>
 			<p id="posts-missing"><?php _e("Uh oh! The post you are looking for seems to have gone into hiding. Apologies, my friend."); ?></p>
 		<?php endif; ?>
+	</section>
 
 <?php get_footer(); ?>

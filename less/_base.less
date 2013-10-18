@@ -12,6 +12,13 @@
 @gray				:#333;
 @white 				:#fff;
 
+// Colors
+@selected-text		:#fff;
+@selected-highlight :#396;
+@logo				:#3d9;
+@main-link		    :#369;
+@hover-link			:lighten(@main-link,20%);
+
 //Overall
 body{
 	.clearfix;
@@ -55,14 +62,12 @@ section#title {
 	color: @white;
 	.center;
 	text-align: center;
-
+	a {color: inherit;}
+	a:hover {color: @green;}
+	
 	h1 {
 		font-family: 'alex-brush';
 		font-size: 4rem;
-		a {
-			color: inherit;
-			text-decoration: none;
-		}
 	}
 
 	h3 {
@@ -93,7 +98,7 @@ section#title {
 	}
 
 	a:hover{
-		color: @green;
+		color: @logo;
 	}
 }
 
@@ -110,7 +115,7 @@ section#title {
 	}
 
 	a:hover{
-		.excerpt-content {
+		.excerpt-title {
 			color: @blue;
 		}
 	}
@@ -129,43 +134,40 @@ section#title {
 		float: right;
 		height: 8rem;
 		width: 8rem;
-		//margin-right: 2rem;
 	}
 }
 
 
 // Single Posts
 
-section#sidebar-single {
-	padding: 1rem;
-}
-
-section#content-single {
-	padding-top: 1rem;
-}
-
-.post-container {
-	margin: 2rem 2rem;
-	padding: 1rem;
-	font-size: 1.2rem;
-	.clearfix;
-	color: @black;
-
-	a {
-		color: inherit;
+body.single-post {
+	section#sidebar-single {
+		padding: 1rem;
+		.center;
 	}
 
-	a:hover{
-		.post-content {
-			color: @blue;
+	section#content {
+		padding-top: 1rem;
+	}
+
+	.post-container {
+		margin: 2rem 2rem;
+		padding: 1rem;
+		font-size: 1.2rem;
+		.clearfix;
+		color: @black;
+
+		.post-title {
+			.clearfix;
+		}
+
+		.post-date{
+			color: @green;
+		}
+
+		.post-content{
+			.clearfix;
 		}
 	}
 
-	.post-title {
-		.clearfix;
-	}
-
-	.post-date{
-		color: @green;
-	}
 }

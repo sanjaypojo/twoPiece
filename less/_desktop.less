@@ -17,8 +17,15 @@ section#title {
 section#content {
 	.column(8);
 	position: absolute;
-	//top:0;
 	right: 0;
+}
+
+section#footer {
+	.column(4);
+	position: absolute;
+	z-index: 99;
+	bottom: 0;
+	left: 0;
 }
 
 .excerpt-container {
@@ -28,17 +35,29 @@ section#content {
 
 // Single page
 
-section#sidebar-single {
-	.column(3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	color: @black;
-}
+body.single {
 
-section#content-single {
-	.column(9);
-	position: absolute;
-	right: 0;
+	section#sidebar-single {
+		.column(2);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		color: @black;
+	}
+
+	section#content {
+		.column(10);
+		position: absolute;
+		right: 0;
+		.post-container {
+			max-width: 45rem;
+			.clearfix;
+		}
+	}
+
+	section#footer {
+		display: none;
+	}
+
 }

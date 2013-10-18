@@ -9,7 +9,7 @@
 	</section>
 
 	<!-- The Loop begins-->
-	<section id="content-single">
+	<section id="content">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
 			<div class="post-container">
@@ -32,5 +32,6 @@
 		<?php else: ?>
 			<p id="posts-missing"><?php _e("Uh oh! The post you are looking for seems to have gone into hiding. Apologies, my friend."); ?></p>
 		<?php endif; ?>
+	</section>
 
 <?php get_footer(); ?>
